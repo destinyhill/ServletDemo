@@ -70,7 +70,7 @@ public class FormServlet extends HttpServlet{
 		writer.println("</tr>");
 		writer.println("<tr>");
 		writer.println("<td>&nbsp;</td>");
-		writer.println("<td><input type='reset'/>" +
+		writer.println("<td><input type='reset'/>  " +
 		"<input type='submit'/></td>");
 		writer.println("</tr>");
 		writer.println("</table>");
