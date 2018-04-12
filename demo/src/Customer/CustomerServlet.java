@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 
 
 @WebServlet(name = "CustomerServlet",
-			urlPatterns = {"/customer","/editcustomer","updatecustomer"})
+			urlPatterns = {"/customer","/editcustomer","/updatecustomer"})
 public class CustomerServlet extends HttpServlet{
 	private static final long serialVersionUID = -20L;
 	private List<Customer> customers = new ArrayList<Customer>();
@@ -76,12 +76,10 @@ public class CustomerServlet extends HttpServlet{
 							 + customerId + "'/>");
 				writer.println("<table>");
 				writer.println("<tr><td>Name:</td><td>"
-							 + "<input name='name' value='" +
-				customer.getName().replaceAll("'", "&#39;")
+							 + "<input name='name' value='" + customer.getName().replaceAll("'", "&#39;")
 							 + "'/></td></tr>");
 				writer.println("<tr><td>City:</td><td>"
-							 + "<input name='city' value='" +
-				customer.getCity().replaceAll("'", "&#39;")
+							 + "<input name='city' value='" + customer.getCity().replaceAll("'", "&#39;")
 							 + "'/></td></tr>");
 				writer.println("<tr>"
 							 + "<td colspan='2' style='text-align:right'>"
