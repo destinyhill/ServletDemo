@@ -1,4 +1,4 @@
-package servletDemo;
+package Customer;
 
 public class Customer {
 	private int id;
