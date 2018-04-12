@@ -64,7 +64,9 @@ public class CustomerServlet extends HttpServlet{
 		int customerId = 0;
 		try {
 			customerId  = Integer.parseInt(request.getParameter("id"));
-		}catch(NumberFormatException e) {
+		}
+		catch(NumberFormatException e) {
+		}
 			Customer customer = getCustomer(customerId);			
 			if(customer != null) {
 				writer.println("<html><head>"
@@ -93,8 +95,7 @@ public class CustomerServlet extends HttpServlet{
 			} 
 			else {
 				writer.println("No customer found");
-			}
-		}		
+			}		
 	}
 	
 	@Override
