@@ -28,6 +28,7 @@ public class CustomerServlet extends HttpServlet{
 		Customer customer2 = new Customer();
 		customer2.setId(2);
 		customer2.setName("Mickey M.");
+		customer2.setCity("Orlando");
 		customers.add(customer2);
 	}
 	
