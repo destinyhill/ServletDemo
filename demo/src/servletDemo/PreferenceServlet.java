@@ -17,7 +17,7 @@ public class PreferenceServlet extends HttpServlet{
 									+ "padding:15px'>"
 									+ "<a href ='cookieClass'>Cookie Class</a>&nbsp;&nbsp;"
 									+ "<a href ='cookieInfo'>Cookie Info</a>&nbsp;&nbsp;"
-									+ "<a href ='perference'>Perference</a>"
+									+ "<a href ='preference'>Perference</a>"
 									+ "</div>";
 	@Override
 	public void doGet(HttpServletRequest request,HttpServletResponse response)
