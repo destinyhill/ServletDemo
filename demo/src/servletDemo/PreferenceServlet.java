@@ -81,11 +81,11 @@ public class PreferenceServlet extends HttpServlet{
 				{
 					if(style.equals("bold"))
 					{
-						response.addCookie(new Cookie("titileFontWeight",style));
+						response.addCookie(new Cookie("titleFontWeight",style));
 					}
 					else if(style.equals("italic"))
 					{
-						response.addCookie(new Cookie("titileFontStyle",style));
+						response.addCookie(new Cookie("titleFontStyle",style));
 					}
 				}
 			}
