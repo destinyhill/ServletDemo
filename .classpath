@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="demo/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/tools/tomcat7/lib/servlet-api.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="lib" path="demo/WebContent/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="demo/WebContent/WEB-INF/classes"/>
 </classpath>

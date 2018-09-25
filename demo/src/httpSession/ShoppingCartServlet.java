@@ -92,7 +92,7 @@ public class ShoppingCartServlet extends HttpServlet {
 		}
 		
 		writer.println("</ul>");
-		writer.println("<a herf='viewCart'>View Cart</a>");
+		writer.println("<a href='viewCart'>View Cart</a>");
 		writer.println("</body></html>");
 	}
 	
@@ -114,8 +114,7 @@ public class ShoppingCartServlet extends HttpServlet {
 		int productId = 0;
 		try {
 			productId = Integer.parseInt(request.getParameter("id"));
-		}
-		catch(NumberFormatException e) {			
+		}catch(NumberFormatException e) {			
 		}
 		Product product = getProduct(productId);
 		if(product != null)
@@ -123,21 +122,21 @@ public class ShoppingCartServlet extends HttpServlet {
 			writer.println("<html><head>"
 						   + "<title>Product Details</title></head>"
 						   + "<body><h2>Product Details</h2>"
-						   + "<form method='post' action='addTOCart'");
-			writer.println("<input type='hidden' name='id'"
+						   + "<form method='post' action='addToCart'");
+			writer.println("<input type='hidden' name='id' "
 						   + "value='" + productId +"'/>");
 			writer.println("<table>");
 			writer.println("<tr><td>Name:</td><td>"
 						   + product.getName() + "</td></tr>");
-			writer.println("<tr><td>Description:</td></td>"
+			writer.println("<tr><td>Description:</td><td>"
 						   + product.getDescription() + "</td></tr>");
 			writer.println("<tr>" + "<tr>"
-						   + "<td><input name='quantity/></td>"
+						   + "<td><input type='text' name='quantity'/></td>"
 						   + "<td><input type='submit' value='Buy'/>"
 						   + "</td>"
 						   + "</tr>");
 			writer.println("<tr><td colspan='2'>"
-						   + "<a herf='products'>Product List</a>"
+						   + "<a href='products'>Product List</a>"
 						   + "</td></tr>");
 			writer.println("</table>");
 			writer.println("</form></body>");
@@ -153,7 +152,7 @@ public class ShoppingCartServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		writer.println("<html><head><title>Shopping Cart</title>" 
 					   + "</head>");
-		writer.println("<body><a herf='products'>" 
+		writer.println("<body><a href='products'>" 
 					   + "Product List</a>");
 		HttpSession session = request.getSession();
 		List<ShoppingItem> cart = (List<ShoppingItem>)session.getAttribute(CART_ATTRIBUTE);
