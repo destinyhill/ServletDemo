@@ -13,8 +13,18 @@ public class ShoppingItem {
 		return this.product;
 	}
 	
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+
 	public int getQuantity(){
 		return this.quantity;
 	}
+	
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
 }
 
