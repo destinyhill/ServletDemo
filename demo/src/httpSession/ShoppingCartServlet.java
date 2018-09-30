@@ -137,9 +137,7 @@ public class ShoppingCartServlet extends HttpServlet {
 			
 		}else{
 			write.println("No product found");
-		}
-				
-		
+		}		
 	}
    
 
